@@ -17,7 +17,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/login", loginData);
+      const response = await axios.post("https://web-technologies-delta.vercel.app/login", loginData);
       console.log("Login successful:", response.data);
     } catch (error) {
       console.error("Login failed:", error.message);

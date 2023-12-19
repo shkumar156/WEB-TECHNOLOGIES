@@ -69,7 +69,7 @@ const App = () => {
   const navigate = useNavigate();
   const userCreate = (data) => {
     axios
-      .post("http://localhost:8080/api/users/createUser", data)
+      .post("https://web-technologies-delta.vercel.app/api/users/createUser", data)
       .then((res) => {
         console.log(res.data, "responce");
         setUser(res.data.success);
@@ -83,7 +83,7 @@ const App = () => {
   const userLogin = (data) => {
     console.log(data, "data");
     axios
-      .post("http://localhost:8080/api/users/loginUser", data)
+      .post("https://web-technologies-delta.vercel.app/api/users/loginUser", data)
       .then((res) => {
         console.log(res.data, "responce");
         setUser(res.data.success);
@@ -97,7 +97,7 @@ const App = () => {
   const adminLogin = (data) => {
     console.log(data, "data");
     axios
-      .post("http://localhost:8080/api/users/loginAdmin", data)
+      .post("https://web-technologies-delta.vercel.app/api/users/loginAdmin", data)
       .then((res) => {
         console.log(res.data, "response");
         setAdminUser(res.data.success);

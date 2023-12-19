@@ -20,7 +20,7 @@ export default function AllProductTable() {
 
   useEffect(() => {
     setLoading(true);
-    axios.get("http://localhost:8080/api/product/getProduct").then((res) => {
+    axios.get("https://web-technologies-delta.vercel.app/api/product/getProduct").then((res) => {
       setAllProducts(res.data.product);
       setLoading(false);
     });

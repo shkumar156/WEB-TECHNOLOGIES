@@ -10,7 +10,7 @@ function ShoesMenu() {
     const fetchData = async () => {
       try {
     
-        axios.get("http://localhost:8080/api/product/getProduct").then((res) => {
+        axios.get("https://web-technologies-delta.vercel.app/api/product/getProduct").then((res) => {
           const data=res.data.product;
           const shoesData = data.filter((product) => product.category === 'Shoes');
         

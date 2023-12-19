@@ -10,7 +10,7 @@ function TrousersMenu() {
     // Fetch data from the API
     const fetchData = async () => {
       try {
-        axios.get("http://localhost:8080/api/product/getProduct").then((res) => {
+        axios.get("https://web-technologies-delta.vercel.app/api/product/getProduct").then((res) => {
           const data = res.data.product;
           const trousersData = data.filter((product) => product.category === 'Trousers');
         

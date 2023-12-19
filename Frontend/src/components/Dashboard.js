@@ -22,7 +22,7 @@ function Dashboard() {
     };
 
     axios
-      .post("http://localhost:8080/api/product/createProduct", data)
+      .post("https://web-technologies-delta.vercel.app/api/product/createProduct", data)
       .then((res) => {
         Toast.success(res.data.message);
         setProductName("");

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:5000";
+const url = "https://web-technologies-delta.vercel.app";
 
 export async function sendPriceViaAxios(product) {
   try {

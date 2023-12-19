@@ -19,7 +19,7 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/signup", userData);
+      const response = await axios.post("https://web-technologies-delta.vercel.app/signup", userData);
       console.log("Signup successful:", response.data);
     } catch (error) {
       console.error("Signup failed:", error.message);

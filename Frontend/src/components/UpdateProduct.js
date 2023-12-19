@@ -22,7 +22,7 @@ function UpdateProduct() {
       price: productPrice,
     };
     axios
-      .put(`http://localhost:8080/api/product/updateProduct/${productId}`, data)
+      .put(`https://web-technologies-delta.vercel.app/api/product/updateProduct/${productId}`, data)
       .then((res) => {
         Toast.success(res.data.message);
         setProductId("");

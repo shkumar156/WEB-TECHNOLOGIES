@@ -9,7 +9,7 @@ const handleSubmit=(e)=>{
   e.preventDefault();
 
   axios
-  .delete(`http://localhost:8080/api/product/deleteProduct/${productId}`)
+  .delete(`https://web-technologies-delta.vercel.app/api/product/deleteProduct/${productId}`)
   .then((res) => {
     Toast.success(res.data.message);
     setProductId("");
