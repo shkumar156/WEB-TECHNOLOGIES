@@ -1,4 +1,5 @@
 import AdminSideBar from "./AdminSideBar";
+import Footer from './Footer';
 import adminImg from "../Img/admin.png";
 import Map from './Map';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -32,7 +33,7 @@ function Admindetails() {
           </div>
         </div>
         <div className="row row8">
-          <h6></h6>
+          <Footer/>
         </div>
       </div>
     </>
