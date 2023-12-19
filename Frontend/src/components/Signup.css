@@ -1,0 +1,122 @@
+.Form_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(209, 206, 206);
+  border-radius: 10px;
+  width: 25%;
+  margin: 0% 40%;
+  padding: 1% 0%;
+  color: white;
+}
+
+.Form_Text {
+  margin: 0% 40%;
+  margin-top: 5%;
+  color: white;
+}
+
+.Form_Container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Fields {
+  margin: 10px;
+}
+
+#gender {
+  margin-right: 15px;
+}
+
+#genderMale {
+  margin-right: 10px;
+}
+
+#login {
+  color: white; /* Set the "Login" text to white */
+}
+
+.button_container {
+  margin-top: 3%;
+  background-color: black;
+  padding: 3px 8px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.button_container button:hover {
+  color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 425px) {
+  .Form_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(209, 206, 206);
+    border-radius: 10px;
+    width: 70%;
+    margin: 0% 20%;
+    padding: 1% 0%;
+    color: white;
+  }
+
+  .Form_Text {
+    margin: 0% 20%;
+    margin-top: 10%;
+    color: white;
+  }
+
+  #gender {
+    margin-right: 10px;
+  }
+
+  #genderMale {
+    margin-right: 5px;
+  }
+
+  .Fields {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Form_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(209, 206, 206);
+    border-radius: 10px;
+    width: 50%;
+    margin: 0% 25%;
+    padding: 1% 0%;
+    color: white;
+  }
+
+  .Form_Text {
+    margin: 0% 25%;
+    margin-top: 10%;
+    color: white;
+  }
+
+  #gender {
+    margin-right: 10px;
+  }
+
+  #genderMale {
+    margin-right: 5px;
+  }
+
+  .Fields {
+    margin: 5px;
+  }
+}
+
+.submit-success {
+  color: white; /* Set the "Submit Successful" text to white */
+}
+

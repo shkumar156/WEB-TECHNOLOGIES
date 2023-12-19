@@ -1,0 +1,39 @@
+.s {
+        text-align: center;
+        color: white;
+        margin-top: 3%;
+      }
+      
+      /* sale.css */
+      
+      /* Rest of your styles */
+      
+      /* Sale texts container */
+      .off {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+      }
+      
+      /* Link border styles */
+      .off li a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: black; /* Blue background color */
+        color: #fff; /* White text color */
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px;
+        transition: background-color 0.3s;
+        border: 2px solid orange; /* Add an orange border */
+      }
+      
+      /* Link hover styles */
+      .off li a:hover {
+        background-color: gray; /* Darker blue on hover */
+      }
+      

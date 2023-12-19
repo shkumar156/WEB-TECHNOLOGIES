@@ -1,0 +1,61 @@
+/* ProductForm.css */
+
+.product-form-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px; /* Reduced padding */
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  max-height: 400px; /* Set a maximum height */
+  overflow-y: auto; /* Add vertical scroll if needed */
+  font-family: Arial, sans-serif;
+  margin: 3% auto;
+  align-content: end;
+  position: relative; /* Set position to relative */
+}
+
+.product-form-container h2 {
+  font-size: 24px; /* Increased font size */
+  margin-bottom: 10px; /* Increased margin */
+  font-weight: bold; /* Make it bold */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  z-index: 1;
+}
+
+.product-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-form-container label {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.product-form-container input,
+.product-form-container textarea {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-form-container button {
+  background-color: black;
+  color: #fff;
+  padding: 8px; /* Reduced padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.product-form-container button:hover {
+  background-color: #0056b3;
+}

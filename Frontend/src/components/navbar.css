@@ -1,0 +1,25 @@
+.navbar {
+    background-color: black;
+    z-index: 1;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-item .nav-link {
+    color: white;
+}
+.txt{
+    text-decoration: none;
+}
+.a{
+    text-decoration: none;
+}
+
+.btn{
+    color:white;
+    border-color: white;
+    width: 30vh;
+}
+

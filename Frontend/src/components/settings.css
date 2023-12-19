@@ -1,0 +1,55 @@
+/* Settings.css */
+.settings-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        font-family: Arial, sans-serif;
+        margin: 3% auto;
+}
+
+.settings-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.settings-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-container label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.settings-container input[type="text"],
+.settings-container input[type="email"],
+.settings-container input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.settings-container button {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.settings-container button:hover {
+  background-color: #0056b3;
+}
+
+.success-message.saved {
+  color: black;
+  font-size: 18px;
+  margin-top: 10px;
+}

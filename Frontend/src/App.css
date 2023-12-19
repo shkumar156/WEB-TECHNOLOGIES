@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+ overflow-x: hidden;
+}
+
+.row1 {
+  height: 10vh;
+}
+
+.row2 {
+  height: 90vh;
+}
+
+.row3 {
+  height: 100vh;
+}
+
+.row4 {
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.row5 {
+  height: 240vh;
+  background-color: white;
+}
+
+.row6 {
+  height: 15vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.row7 {
+  height: 83vh;
+}
+
+.row8 {
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 50px;
+}

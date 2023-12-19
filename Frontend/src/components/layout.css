@@ -1,0 +1,52 @@
+/* Calendar.css */
+.calendar {
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-top: 8%;
+      }
+      
+      .calendar-header {
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+      
+      .days-of-week {
+        display: flex;
+        justify-content: space-around;
+        background-color: #eee;
+        padding: 5px;
+        font-weight: bold;
+      }
+      
+      .day-of-week {
+        padding: 5px;
+      }
+      
+      .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 2px;
+      }
+      
+      .calendar-day {
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+      }
+      
+      .calendar-day.selected {
+        background-color: black;
+        color: #fff;
+        border-radius: 50%;
+      }
+      
+      .empty-day {
+        background-color: transparent;
+      }
+      
+      /* You can add more styles for the hover effect, transitions, or additional features as needed. */
+      

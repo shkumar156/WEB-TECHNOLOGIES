@@ -1,0 +1,109 @@
+.add-order-form {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        font-family: Arial, sans-serif;
+        margin: 10% auto;
+        
+      }
+      
+      .add-order-form h2 {
+        margin: 0 0 20px;
+        font-size: 24px;
+      }
+      
+      .form-group {
+        margin-bottom: 15px;
+      }
+      
+      .form-group label {
+        display: block;
+        text-align: left;
+      }
+      .add-order-form {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        font-family: Arial, sans-serif;
+        margin: 10% auto;
+      }
+      
+      .add-order-form h2 {
+        margin: 0 0 20px;
+        font-size: 24px;
+      }
+      
+      .form-group {
+        margin-bottom: 15px;
+      }
+      
+      .form-group label {
+        display: block;
+        text-align: left;
+      }
+      
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #0074d9;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+      .quantity-controls {
+        width: min-content;
+        margin: 0 auto; /* Center the buttons horizontally */
+        text-align: center; /* Center the text within the buttons */
+      }
+      
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #0074d9;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+     .quantity-controls{
+      width: min-content;
+     }
+
+     .success-message{
+      background-color: black;
+     }

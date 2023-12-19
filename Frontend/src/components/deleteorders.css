@@ -1,0 +1,48 @@
+.delete-order-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  font-family: Arial, sans-serif;
+  margin: 10% auto;
+}
+
+.delete-order-form h2 {
+  margin: 0 0 20px;
+  font-size: 28px; /* Increased font size */
+  font-weight: bold; /* Make it bold */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4136; /* Red color for delete button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #c82316; /* Darker red color on hover */
+}

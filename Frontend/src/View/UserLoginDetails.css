@@ -1,0 +1,23 @@
+/* UserLoginDetails.css */
+
+.UserDetailsContainer {
+        color: white;
+        margin-top: 50px;
+      }
+      
+      .UserDetailRow {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      
+      .UserDetailLabel {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      
+      .UserDetailValue {
+        font-style: italic;
+      }
+      
+      /* Add more styling as needed */
+      

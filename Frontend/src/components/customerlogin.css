@@ -1,0 +1,82 @@
+.Login_Container {
+        display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(209, 206, 206);
+  border-radius: 10px;
+  width: 25%;
+  margin: 0% 40%;
+  padding: 1% 0%;
+  color: white;
+  margin-top: 7%;
+      }
+      
+      .Login_Container h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        color: white; /* Set text color to white for h2 */
+      }
+      
+      .Fields {
+        margin: 10px;
+      }
+      
+      .Fields label {
+        color: white; /* Set text color to white for labels */
+      }
+      
+      .button_container button {
+        background-color: black;
+        padding: 10px 40px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 25px;
+      }
+      
+      .button_container button:hover {
+        color: white;
+      }
+      
+      /* Media Queries */
+      @media screen and (max-width: 425px) {
+        .Login_Container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 2px solid rgb(209, 206, 206);
+          width: 70%;
+          margin: 15% 20%;
+          color: white; /* Set text color to white for the container */
+        }
+      
+        .Fields {
+          margin: 5px;
+        }
+      
+        .Fields label {
+          color: white; /* Set text color to white for labels */
+        }
+      }
+      
+      @media screen and (width: 768px) {
+        .Login_Container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 2px solid rgb(209, 206, 206);
+          width: 50%;
+          margin: 5% 25%;
+          padding: 1% 0%;
+          color: white; /* Set text color to white for the container */
+        }
+      
+        .Fields {
+          margin: 5px;
+        }
+      
+        .Fields label {
+          color: white; /* Set text color to white for labels */
+        }
+      }
+      

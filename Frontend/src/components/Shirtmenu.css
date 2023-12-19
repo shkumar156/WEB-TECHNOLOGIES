@@ -1,0 +1,76 @@
+/* ShirtMenu.css */
+.shirt-menu {
+        text-align: center;
+        color: white;
+        background-color: white;
+        
+      }
+      
+      .shirt-menu h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      .shirt-menu ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .shirt-menu li {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 200px;
+        text-align: center;
+      }
+      
+      .shirt-menu li img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .shirt-menu h3 {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+      
+      .shirt-menu p {
+        font-size: 14px;
+        color: black;
+        margin: 10px 0;
+      }
+      
+      .shirt-menu p.price {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      
+      /* Style the button or link to return to the main page */
+      .back-to-main {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        text-decoration: none;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        
+      }
+      
+      .back-to-main:hover {
+        background-color: #0056b3;
+      }
+
+      .shirt-details{
+        color: black;
+        
+      }
+      

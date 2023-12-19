@@ -1,0 +1,114 @@
+/* Footer.css */
+.footer {
+        background-color: black;
+        color: orange;
+        padding: 30px 0;
+        margin-top: 1%;
+        
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        
+        
+      }
+      
+      .footer-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      
+      h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        margin-left: -5%;
+      }
+      
+      .p1 {
+        margin: 0;
+        margin-bottom: 10px;
+        margin-left: -5%;
+        
+      }
+      .p2 {
+        margin: 0;
+        margin-bottom: 10px;
+        margin-left: -5%;
+        
+      }
+      .p3 {
+        margin: 0;
+        margin-bottom: 10px;
+        margin-left: -5%;
+        
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+        
+      }
+      
+      ul li {
+        margin-bottom: 5px;
+      }
+      
+      a {
+        color: orange;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+      
+      .newsletter-signup {
+        flex-basis: 30%;
+        max-width: 300px;
+        margin-left: 10%;
+      }
+      
+      input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        margin-left: -6%;
+      }
+      
+      button {
+        background-color: #ff6600;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-left: -5%;
+        border: #ff6600;
+       
+       
+      }
+      
+      button:hover {
+        background-color: #ff9900;
+      }
+      
+      .cs{
+        margin-left: 15%;
+      }
+
+      .cs1{
+        margin-left: 15%;
+      }
+
+      .newsletterr{
+        margin-left: -5%;
+      }
+
+      .subscribe{
+        color: #ff9900;
+      }
+      

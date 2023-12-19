@@ -1,0 +1,76 @@
+.menu-card-row1 {
+    background-color: white;
+    height: auto;
+  }
+  
+  .menu-card-row-cols {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between; /* Add this line to distribute cards evenly */
+  }
+  
+  .menu-card-col {
+    width: calc(25% - 10px); /* Adjust width to fit four cards with spacing */
+    max-width: 300px;
+  }
+  
+  .menu-card {
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-card-img {
+    border-radius: 5px 5px 0 0;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .menu-card-body {
+    height: auto;
+  }
+  
+  .menu-card-title-container {
+    height: 5vh;
+  }
+  
+  .menu-card-title {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .menu-card-text-container {
+    height: auto;
+  }
+  
+  .menu-card-text {
+    color: black;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  
+  .menu-card-btn-container {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  

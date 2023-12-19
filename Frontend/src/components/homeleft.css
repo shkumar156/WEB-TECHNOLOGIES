@@ -1,0 +1,44 @@
+.container1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        align-content: center;
+        margin-left: -3%;
+    }
+    
+    .card1 {
+        background: transparent;
+    }
+    
+    .card-body1 {
+        font-weight: bolder;
+        color: white;
+      
+    }
+    
+    .card-title1 {
+        text-align: center;
+    
+    }
+    
+    .card-text1 {
+        text-align: justify;
+        
+        
+    }
+    
+    .card-img-top1 {
+        height: 50vh;
+        border-radius: 15px;
+       
+    }
+    
+    .card-img-top2{
+        height: 70vh;
+        width:120vh;
+        border-radius: 30px;
+    
+        border: 2px;
+        
+    }

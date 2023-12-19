@@ -1,0 +1,37 @@
+.rating {
+        text-align: center;
+        margin: 20px;
+        color: black;
+        background-color: white;
+      }
+      
+      .stars {
+        font-size: 24px;
+      }
+      
+      .star {
+        cursor: pointer;
+        margin: 0 5px;
+        transition: transform 0.2s;
+      }
+      
+      .star.selected {
+        transform: scale(1.2);
+        color: gold;
+      }
+      .ratingbutton{
+        width: 30%;
+      }
+
+      .rated{
+        background-color: black;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        font-family: Arial, sans-serif;
+        margin: 5% auto;
+        color: white;
+      }
+      

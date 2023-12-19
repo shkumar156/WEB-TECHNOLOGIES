@@ -1,0 +1,90 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* 100% viewport height to center it in the middle of the screen */
+  background-color: black; /* Set the background color to white */
+  height: 90vh;
+  margin-top: -2.7%;
+
+}
+
+.form-container{border: 3px solid white;
+padding: 25px 25px;
+border-radius: 15px;}
+
+
+.login-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white; /* Set the text color to black */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.success-message {
+  color: green;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+form {
+  text-align: center;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000; /* Set the border color to black */
+  border-radius: 5px;
+  background-color: white;
+  color: #000; /* Set the text color to black */
+}
+
+.loginbutton {
+  background-color: white; /* Set the button background color to white */
+  color: black; /* Set the button text color to black */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.loginbutton:hover {
+  background-color: #333; /* Darken the button background color on hover */
+  color: white; /* Change text color to white on hover */
+}
+
+
+.loginbutton:focus {
+  background-color: #333; /* Change button background color on focus */
+  outline: none; /* Remove the default focus outline (customize as needed) */
+  color: white; /* Change text color to white on focus */
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="password"]
+ {
+  color: black;
+}
+
+.error-message{color: red;}
+
+.success-message{color: white;}
+
+
+.form-group label{color: white;}
+

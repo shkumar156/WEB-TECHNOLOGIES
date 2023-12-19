@@ -1,0 +1,44 @@
+.list-group {
+    width: 100%;
+}
+
+.list-group-item {
+    margin: 20px 0;
+}
+
+.suggestion-box {
+    height: 28vh;
+    padding-left: 18px;
+    padding: 18px;
+    
+}
+
+.suggestion-box::placeholder {
+    color: black;
+    margin-bottom: 10%;
+   
+}
+
+
+.time{
+    color: white;
+    text-align: center;
+}
+
+.send-button {
+    background-color: black;
+    color: white; /* You can change the text color as needed */
+    border: 2px solid white; /* Add a border for a better appearance */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30%;
+    align-self: center; /* Add a smooth transition effect */
+  
+    /* Additional styles if needed */
+  }
+  
+  .send-button:hover {
+    background-color: gray; /* Change the background color on hover */
+  }
+  

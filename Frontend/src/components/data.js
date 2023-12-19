@@ -1,0 +1,120 @@
+
+  
+// function Data(){
+//        const data = {
+//         "items": [
+//           {
+//             "id": 1,
+//             "name": "Blue T-shirt",
+//             "description": "Comfortable cotton t-shirt in blue.",
+//             "price": 19.99,
+//             "image": "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80",
+//             "category": "T-shirts",
+//             "rating": 4.5,
+//             "stock": 50
+//           },
+//           {
+//             "id": 2,
+//             "name": "Black Jeans",
+//             "description": "Classic black jeans for a stylish look.",
+//             "price": 29.99,
+//             "image": "https://media.istockphoto.com/id/499232450/photo/confident-elegant-business-man-with-hands-in-pockets.jpg?s=1024x1024&w=is&k=20&c=eBBT-0YN-LTuGRH4B6dcmzyrS31OrjjHub1gkqhJm1M=",
+//             "category": "Jeans",
+//             "rating": 4.2,
+//             "stock": 30
+//           },
+//           {
+//             "id": 3,
+//             "name": "Red Dress",
+//             "description": "Elegant red dress for special occasions.",
+//             "price": 39.99,
+//             "image": "https://images.unsplash.com/photo-1612336307429-8a898d10e223?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+//             "category": "Dresses",
+//             "rating": 4.8,
+//             "stock": 20
+//           },
+//           {
+//             "id": 4,
+//             "name": "Casual Shirt",
+//             "description": "Casual shirt for a relaxed look.",
+//             "price": 24.99,
+//             "image": "https://media.istockphoto.com/id/818613130/photo/confidence-is-the-name-of-the-game.webp?s=1024x1024&w=is&k=20&c=l0yTtH0R5OsHGAfDLlQKiQ3LJ0UcTDoNL_LHPv3scko=",
+//             "category": "Shirts",
+//             "rating": 4.0,
+//             "stock": 15
+//           },
+//           {
+//             "id": 5,
+//             "name": "White Sneakers",
+//             "description": "Classic white sneakers for everyday wear.",
+//             "price": 49.99,
+//             "image": "https://media.istockphoto.com/id/1155023238/photo/female-legs-in-stylish-black-jeans-in-white-leather-sneakers-with-snake-pattern-on-the.jpg?s=1024x1024&w=is&k=20&c=zASiNvaQCCjxAmsZ5PNAcUt1BLgQuxv9pHoNnDSz82Y=",
+//             "category": "Shoes",
+//             "rating": 4.6,
+//             "stock": 25
+//           },
+//           {
+//             "id": 6,
+//             "name": "Denim Jacket",
+//             "description": "Stylish denim jacket for a cool look.",
+//             "price": 59.99,
+//             "image": "https://images.unsplash.com/photo-1618393649689-c997c7455ef5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+//             "category": "Jackets",
+//             "rating": 4.4,
+//             "stock": 10
+//           },
+//           {
+//             "id": 7,
+//             "name": "Printed Skirt",
+//             "description": "Colorful printed skirt for a fun style.",
+//             "price": 34.99,
+//             "image": "https://media.istockphoto.com/id/1522030418/photo/photo-of-beautiful-young-lady-wavy-blonde-hair-hold-cup-tasty-takeaway-cacao-look-empty-space.jpg?s=1024x1024&w=is&k=20&c=aT21-qni3F_xpFLgsA49p0RKXvT4kjra4jcOAWz4ISI=",
+//             "category": "Skirts",
+//             "rating": 4.3,
+//             "stock": 40
+//           },
+//           {
+//             "id": 8,
+//             "name": "Leather Belt",
+//             "description": "Genuine leather belt to complete your outfit.",
+//             "price": 14.99,
+//             "image": "https://media.istockphoto.com/id/523818848/photo/brown-leather-belt.jpg?s=1024x1024&w=is&k=20&c=7skhsig4FlrvXTjTmuvgAQWoR10Ktht3f-LnMQY341E=",
+//             "category": "Accessories",
+//             "rating": 4.1,
+//             "stock": 35
+//           },
+//           {
+//             "id": 9,
+//             "name": "Wool Sweater",
+//             "description": "Warm wool sweater for the winter season.",
+//             "price": 44.99,
+//             "image": "https://media.istockphoto.com/id/1265040832/photo/stack-of-sweaters-on-a-wooden-table.jpg?s=1024x1024&w=is&k=20&c=0w1jL0VOarK4Ok_p3L4LO7LosKKB6GBOmgXUJxYo__Q=",
+//             "category": "Sweaters",
+//             "rating": 4.7,
+//             "stock": 5
+//           },
+//           {
+//             "id": 10,
+//             "name": "Leather Boots",
+//             "description": "Stylish leather boots for a trendy look.",
+//             "price": 79.99,
+//             "image": "https://media.istockphoto.com/id/1334963381/photo/old-vintage-leather-boots-with-shoe-brush.jpg?s=1024x1024&w=is&k=20&c=P3NcqL65ZIWxsgoAdlPCUT__T0CmnDYtT0e-j4v8miM=",
+//             "category": "Shoes",
+//             "rating": 4.9,
+//             "stock": 12
+//           },
+//         ],
+//       };
+
+//     return (
+//        <>
+//        {
+//         data.map((data)) => {
+
+//         }
+//        };
+//        </>
+//     );
+// }
+
+// export default Data;

@@ -1,0 +1,11 @@
+.rate-title {
+        text-align: center; /* Center the text horizontally */
+        color: black; /* Set the text color to white */
+        background-color: orange; /* Background color for the curved border */
+        border-radius: 20px; /* Adjust the border-radius as needed */
+        padding: 10px 20px; /* Add padding to create space around the text */
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 0px; /* Make the text a block element to apply background and border styles */
+      }
+      
