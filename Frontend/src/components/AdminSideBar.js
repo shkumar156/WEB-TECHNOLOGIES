@@ -14,7 +14,7 @@ function AdminSideBar() {
           <FontAwesomeIcon icon={faMap} /> Maps
         </Link>
         <Link to="/dashboard" className="list-group-item side-bar-list list-group-item-action !active">
-          <FontAwesomeIcon icon={faTachometerAlt} /> Dashboard
+          <FontAwesomeIcon icon={faTachometerAlt} /> Calender
         </Link>
         <Link to="/add" className="list-group-item side-bar-list list-group-item-action !active">
           <FontAwesomeIcon icon={faList} /> All Products
