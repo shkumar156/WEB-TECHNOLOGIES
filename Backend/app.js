@@ -12,5 +12,7 @@ const product = require("./routes/productRoute");
 app.use( "/api" ,user)
 app.use( "/api" ,product)
 
-
+app.get("/",(req,res)=>{
+        res.send("Running!");
+})
 module.exports = app;
