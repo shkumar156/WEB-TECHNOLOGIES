@@ -1,18 +1,19 @@
 /* Settings.css */
 .settings-container {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        width: 300px;
-        font-family: Arial, sans-serif;
-        margin: 3% auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  font-family: Arial, sans-serif;
+  margin: 3% auto;
 }
 
 .settings-container h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .settings-container form {
@@ -22,6 +23,7 @@
 
 .settings-container label {
   font-weight: bold;
+  font-size: 16px; /* Change the font size to your preferred size */
   margin-bottom: 10px;
 }
 
