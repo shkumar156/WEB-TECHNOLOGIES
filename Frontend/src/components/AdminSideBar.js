@@ -4,7 +4,7 @@ import Footer from './Footer';
 import './adminSideBar.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTachometerAlt, faList, faEdit, faTrash, faPlus, faCog, faMap } from '@fortawesome/free-solid-svg-icons';
+import { faTachometerAlt, faList, faEdit, faTrash, faPlus, faCog, faMap, faUser } from '@fortawesome/free-solid-svg-icons';
 
 function AdminSideBar() {
   return (
@@ -14,7 +14,7 @@ function AdminSideBar() {
           <FontAwesomeIcon icon={faMap} /> Maps
         </Link>
         <Link to="/dashboard" className="list-group-item side-bar-list list-group-item-action !active">
-          <FontAwesomeIcon icon={faTachometerAlt} /> Calender
+          <FontAwesomeIcon icon={faUser} /> Calender
         </Link>
         <Link to="/add" className="list-group-item side-bar-list list-group-item-action !active">
           <FontAwesomeIcon icon={faList} /> All Products
