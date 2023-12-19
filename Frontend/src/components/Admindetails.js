@@ -1,12 +1,11 @@
-import "./admin.css";
+import AdminSideBar from "./AdminSideBar";
 import adminImg from "../Img/admin.png";
+import Map from './Map';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import AdminSideBar from "./AdminSideBar";
-import Footer from "./Footer";
-import AllProductTable from "./AllProductTable";
 
-function Adminadd() {
+
+function Admindetails() {
   return (
     <>
       <div className="container-fluid">
@@ -29,18 +28,15 @@ function Adminadd() {
             <AdminSideBar />
           </div>
           <div className="col col-md-9">
-            {/* <Addorders/> */}
-            <AllProductTable/>
-        
+          <Map/>
           </div>
         </div>
-        
-      </div>
-      <div className="row row8">
-          <h6><Footer/></h6>
+        <div className="row row8">
+          <h6></h6>
         </div>
+      </div>
     </>
   );
 }
 
-export default Adminadd;
+export default Admindetails;

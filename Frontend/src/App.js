@@ -1,18 +1,3 @@
-// // import Test from "./Test";
-
-import Testing from "./Testing";
-
-// // function App(){
-
-// //   return(
-// //     <div>
-// // <Test/>
-
-// //     </div>
-// //   )
-
-// // }
-
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
@@ -52,6 +37,7 @@ import axios from "axios";
 import { Toast } from "./Toaster/Toaster";
 import { ToastContainer } from "react-toastify";
 import UserLoginDetails from "./View/UserLoginDetails";
+import Admindetails from "./components/Admindetails";
 
 const App = () => {
   const viewShirtMenu = () => {
@@ -172,6 +158,7 @@ const App = () => {
           <Route path="/rate" element={<Rating />} />
           <Route path="/sale" element={<Sale />} />
           <Route path="/saleitems" element={<SaleItems />} />
+          <Route path="/charts" element={<Admindetails/>} />
         </Routes>
       )}
     </>
@@ -179,16 +166,3 @@ const App = () => {
 };
 
 export default App;
-
-// function App(){
-//   return(
-//     <>
-//     <Testing/>
-
-//     </>
-
-//   )
-
-// }
-
-// export default App;

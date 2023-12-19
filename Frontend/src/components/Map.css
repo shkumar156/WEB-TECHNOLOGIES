@@ -1,0 +1,18 @@
+/* Map.css */
+
+.maps-container {
+        width: 100%;
+        height: 450px; /* Increased height */
+        overflow: hidden;
+        border-radius: 15px;
+        margin-top: 20px;
+        position: relative;
+        border: 2px solid darkgray; /* Black border on hover */
+      }
+      
+      .google-maps {
+        width: 110%;
+        height: 100%;
+        border: none;
+      }
+      
