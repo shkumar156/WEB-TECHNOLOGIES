@@ -7,7 +7,12 @@
         border-radius: 15px;
         margin-top: 20px;
         position: relative;
+        filter: grayscale(100%); /* Black and white effect */
+        transition: filter 0.3s ease; /* Add transition effect */
+      }
       
+      .maps-container:hover {
+        filter: grayscale(0%); /* Revert to color on hover */
       }
       
       .google-maps {

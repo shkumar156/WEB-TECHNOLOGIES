@@ -32,7 +32,7 @@ function Admindash() {
           </div>
         </div>
         <div className="row row8">
-          <h6></h6>
+          <Footer/>
         </div>
       </div>
     </>

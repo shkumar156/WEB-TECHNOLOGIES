@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "../components/deleteorders.css";
+import "./deleteorders.css";
 import axios from "axios";
 import { Toast } from "../Toaster/Toaster";
+
 
 const Deleteorders = () => {
   const [productId, setProductId] = useState("");
