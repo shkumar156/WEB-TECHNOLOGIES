@@ -97,7 +97,7 @@ const App = () => {
 
   useEffect(() => {
     if (admin) {
-      navigate("/adminPage");
+      navigate("/map");
     } else navigate("/adminlogin");
     
   }, [admin]);
@@ -158,7 +158,7 @@ const App = () => {
           <Route path="/rate" element={<Rating />} />
           <Route path="/sale" element={<Sale />} />
           <Route path="/saleitems" element={<SaleItems />} />
-          <Route path="/charts" element={<Admindetails/>} />
+          <Route path="/map" element={<Admindetails/>} />
         </Routes>
       )}
     </>

@@ -10,11 +10,11 @@ function AdminSideBar() {
   return (
     <>
       <div className="list-group admin-side-bar">
+      <Link to="/map" className="list-group-item side-bar-list list-group-item-action !active">
+          <FontAwesomeIcon icon={faMap} /> Maps
+        </Link>
         <Link to="/dashboard" className="list-group-item side-bar-list list-group-item-action !active">
           <FontAwesomeIcon icon={faTachometerAlt} /> Dashboard
-        </Link>
-        <Link to="/charts" className="list-group-item side-bar-list list-group-item-action !active">
-          <FontAwesomeIcon icon={faMap} /> Maps
         </Link>
         <Link to="/add" className="list-group-item side-bar-list list-group-item-action !active">
           <FontAwesomeIcon icon={faList} /> All Products
