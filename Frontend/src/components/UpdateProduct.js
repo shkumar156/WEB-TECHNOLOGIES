@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../components/dashboard.css"; // Import your CSS file
 import axios from "axios";
 import { Toast } from "../Toaster/Toaster";
+import { API } from "../App";
 
 function UpdateProduct() {
   const [productId, setProductId] = useState("");
@@ -21,8 +22,8 @@ function UpdateProduct() {
       description: productDescription,
       price: productPrice,
     };
-    axios
-      .put(`http://localhost:8080/api/product/updateProduct/${productId}`, data)
+    API
+      .put(`/api/product/updateProduct/${productId}`, data)
       .then((res) => {
         Toast.success(res.data.message);
         setProductId("");

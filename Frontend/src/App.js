@@ -41,7 +41,7 @@ import Admindetails from "./components/Admindetails";
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://web-technologies-delta.vercel.app",
+  baseURL: "https://web-technologies-delta.vercel.app",
 });
 
 API.interceptors.request.use((req) => {

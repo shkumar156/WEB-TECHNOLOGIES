@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./deleteorders.css";
 import axios from "axios";
 import { Toast } from "../Toaster/Toaster";
+import { API } from "../App";
 
 
 const Deleteorders = () => {
@@ -9,8 +10,8 @@ const Deleteorders = () => {
 const handleSubmit=(e)=>{
   e.preventDefault();
 
-  axios
-  .delete(`http://localhost:8080/api/product/deleteProduct/${productId}`)
+  API
+  .delete(`/api/product/deleteProduct/${productId}`)
   .then((res) => {
     Toast.success(res.data.message);
     setProductId("");
