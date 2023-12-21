@@ -58,10 +58,12 @@ const App = () => {
     // For simplicity, we'll use a state variable to control visibility.
     setShirtMenuVisible(true);
   };
-  const isuser=JSON.parse(localStorage.getItem("profile")).user
+  const storedProfile = JSON.parse(localStorage.getItem("profile"));
+  const isuser = storedProfile && storedProfile.user ? true : false;
   const [isShirtMenuVisible, setShirtMenuVisible] = React.useState(false);
-  const [user, setUser] = useState(isuser?true:false);
-  const [userData, setUserData] = useState( JSON.parse(localStorage.getItem("profile")).user);
+  console.log(isuser);
+  const [user, setUser] = useState(isuser);
+  const [userData, setUserData] = useState( (JSON.parse(localStorage.getItem("profile"))?.user)?JSON.parse(localStorage.getItem("profile"))?.user:null);
 
   const [admin, setAdminUser] = useState(false);
 console.log(isuser);
