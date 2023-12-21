@@ -2,8 +2,63 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import "./Signup.css";
+import jwt_decode from "jwt-decode";
+import ReactDOM from "react-dom";
+import { useNavigate } from "react-router-dom";
+import { GoogleLogin } from "react-google-login";
+import { gapi } from "gapi-script";
 
 const Signup = ({userCreate}) => {
+
+  const history = useNavigate();
+
+
+  const googleSuccess = async (res) => {
+    try {
+    console.log(JSON.stringify(res));
+    const result = jwt_decode(res?.tokenObj.id_token);
+    const token = res?.tokenObj.id_token;
+    console.log(result);
+  
+    
+    localStorage.setItem("profile", JSON.stringify({user:result,token:token }));
+
+
+
+history('/');
+  window.location.reload();
+
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const responseGoogle = (response) => {
+    console.log("vhhvjhv" + response);
+  };
+  /* eslint-disable */
+  useEffect(() => {
+    /* global google */
+    function start() {
+      gapi.client.init({
+        clientId:
+          "388968919560-qgk4usj0ojm9941jr308kae0t00dq5e4.apps.googleusercontent.com",
+        scope: "",
+      });
+    }
+    gapi.load("client:auth2", start);
+    ReactDOM.render(
+      <GoogleLogin
+        clientId="388968919560-qgk4usj0ojm9941jr308kae0t00dq5e4.apps.googleusercontent.com"
+        buttonText="Login With Google"
+        onSuccess={googleSuccess}
+        onFailure={responseGoogle}
+        cookiePolicy={"single_host_origin"}
+      />,
+      document.getElementById("signInDiv")
+    );
+  }, []);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,6 +83,8 @@ const Signup = ({userCreate}) => {
           <Link to="/customerlogin" id="login">
             Login
           </Link>
+       
+
         </p>
 
         <div className="Form_Container">
@@ -79,11 +136,19 @@ const Signup = ({userCreate}) => {
             <div>
               <input type="tel" id="contactNumber" pattern="[0-9]*" required />
             </div>
+
+            
+     
+    
           </div>
+
+
 
           <div className="button_container">
             <button type="submit">Submit</button>
           </div>
+
+           <div id="signInDiv"></div>
         </div>
       </form>
       <Footer />

@@ -33,33 +33,46 @@ import Track from "./components/Track";
 import Rating from "./components/Rating";
 import Sale from "./components/Sale";
 import SaleItems from "./components/SaleItems";
-import axios from "axios";
 import { Toast } from "./Toaster/Toaster";
 import { ToastContainer } from "react-toastify";
 import UserLoginDetails from "./View/UserLoginDetails";
 import Admindetails from "./components/Admindetails";
+import axios from "axios";
 
+const API = axios.create({
+  baseURL: "http://web-technologies-delta.vercel.app",
+});
+
+API.interceptors.request.use((req) => {
+  if (localStorage.getItem("profile")) {
+    req.headers.Authorization = `Bearer ${
+      JSON.parse(localStorage.getItem("profile")).token
+    }`;
+  }
+  return req;
+});
 const App = () => {
   const viewShirtMenu = () => {
     // You can handle navigation to the ShirtMenu here.
     // For simplicity, we'll use a state variable to control visibility.
     setShirtMenuVisible(true);
   };
-
+  const isuser=JSON.parse(localStorage.getItem("profile")).user
   const [isShirtMenuVisible, setShirtMenuVisible] = React.useState(false);
-  const [user, setUser] = useState(false);
-  const [userData, setUserData] = useState(null);
+  const [user, setUser] = useState(isuser?true:false);
+  const [userData, setUserData] = useState( JSON.parse(localStorage.getItem("profile")).user);
 
   const [admin, setAdminUser] = useState(false);
-
+console.log(isuser);
   const navigate = useNavigate();
   const userCreate = (data) => {
-    axios
-      .post("https://web-technologies-delta.vercel.app/api/users/createUser", data)
+    API
+      .post("/api/users/createUser", data)
       .then((res) => {
         console.log(res.data, "responce");
         setUser(res.data.success);
         setUserData(res.data.user)
+        localStorage.setItem("profile", JSON.stringify({user:res.data.user,token:res.data.token }));
         Toast.success(res.data.message);
       })
       .catch((err) => {
@@ -68,12 +81,14 @@ const App = () => {
   };
   const userLogin = (data) => {
     console.log(data, "data");
-    axios
-      .post("https://web-technologies-delta.vercel.app/api/users/loginUser", data)
+    API
+      .post("/api/users/loginUser", data)
       .then((res) => {
         console.log(res.data, "responce");
         setUser(res.data.success);
-        setUserData(res.data.user)
+        setUserData(res.data.user);
+        localStorage.setItem("profile", JSON.stringify({user:res.data.user,token:res.data.token }));
+
         Toast.success(res.data.message);
       })
       .catch((err) => {
@@ -82,8 +97,8 @@ const App = () => {
   };
   const adminLogin = (data) => {
     console.log(data, "data");
-    axios
-      .post("https://web-technologies-delta.vercel.app/api/users/loginAdmin", data)
+    API
+      .post("/api/users/loginAdmin", data)
       .then((res) => {
         console.log(res.data, "response");
         setAdminUser(res.data.success);
@@ -166,3 +181,4 @@ const App = () => {
 };
 
 export default App;
+export {API};

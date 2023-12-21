@@ -1,6 +1,7 @@
 // Login.js
 import React, { useState } from "react";
 import axios from "axios";
+import { API } from "../App";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({
@@ -17,7 +18,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://web-technologies-delta.vercel.app/login", loginData);
+      const response = await API.post("/login", loginData);
       console.log("Login successful:", response.data);
     } catch (error) {
       console.error("Login failed:", error.message);

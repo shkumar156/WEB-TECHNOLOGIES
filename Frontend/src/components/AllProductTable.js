@@ -12,6 +12,7 @@ import Paper from "@mui/material/Paper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImage } from "@fortawesome/free-solid-svg-icons";
 import "./AllProductsTable.css";
+import { API } from "../App";
 
 export default function AllProductTable() {
   const [allProduct, setAllProducts] = useState([]);
@@ -20,7 +21,7 @@ export default function AllProductTable() {
 
   useEffect(() => {
     setLoading(true);
-    axios.get("https://web-technologies-delta.vercel.app/api/product/getProduct").then((res) => {
+  API.get("/api/product/getProduct").then((res) => {
       setAllProducts(res.data.product);
       setLoading(false);
     });

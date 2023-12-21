@@ -140,6 +140,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Shirtmenu.css'
+import { API } from '../App';
 
 function ShirtMenu() {
   const [shirts, setShirts] = useState([]);
@@ -149,7 +150,7 @@ function ShirtMenu() {
     const fetchData = async () => {
       try {
     
-        axios.get("https://web-technologies-delta.vercel.app/api/product/getProduct").then((res) => {
+        API.get("/api/product/getProduct").then((res) => {
           const data=res.data.product;
           const shirtsData = data.filter((product) => product.category === 'Shirts');
         

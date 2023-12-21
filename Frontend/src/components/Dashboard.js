@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Toast } from "../Toaster/Toaster";
 import './dashboard.css';
+import { API } from "../App";
 
 function Dashboard() {
   const [productName, setProductName] = useState("");
@@ -21,8 +22,8 @@ function Dashboard() {
       category: productCategory,
     };
 
-    axios
-      .post("https://web-technologies-delta.vercel.app/api/product/createProduct", data)
+    API
+      .post("/api/product/createProduct", data)
       .then((res) => {
         Toast.success(res.data.message);
         setProductName("");

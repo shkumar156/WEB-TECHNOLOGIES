@@ -1,6 +1,7 @@
 const User = require("../models/authModals/userModal");
 const Admin = require("../models/authModals/adminModal");
-
+const  bcrypt= require ("bcrypt");
+const  jwt= require ("jsonwebtoken");
 
 exports.userRegister = async (req, res) => {
   console.log(req.body, "req.body;");
@@ -13,13 +14,18 @@ exports.userRegister = async (req, res) => {
       message: "This user already exist",
     });
   }
+  const hashedPassword = await bcrypt.hash(password, 12);
   const userData = await User.create({
     name,
     email,
     gender,
-    password,
+    password:hashedPassword,
   });
-
+  const token = jwt.sign(
+    { email: userData.email, id: userData._id },
+    "apex",
+    { expiresIn: "1h" }
+  );
   res.status(201).json({
     success: true,
     message: "Registered Successfully",
@@ -30,6 +36,7 @@ exports.userRegister = async (req, res) => {
       gender: userData.gender,
       createdAt: userData.createdAt,
     },
+    token:token
   });
 
 
@@ -49,13 +56,21 @@ exports.userLogin = async (req, res) => {
         message: "Invalid email or password",
       });
     }
-
-    if (password !== user?.password) {
+    const isPasswordCorrect = await bcrypt.compare(
+      password,
+      user.password
+    );
+    if (!isPasswordCorrect) {
       return res.status(401).json({
         success: false,
         message: "Invalid email or password",
       });
     }
+    const token = jwt.sign(
+      { email: user.email, id: user._id },
+      "apex",
+      { expiresIn: "1h" }
+    );
 
     // If authentication is successful, return user data
     res.status(200).json({
@@ -68,6 +83,7 @@ exports.userLogin = async (req, res) => {
         createdAt: user.createdAt,
       },
       message: "Login successful",
+      token:token
     });
   } catch (error) {
     console.error(error);

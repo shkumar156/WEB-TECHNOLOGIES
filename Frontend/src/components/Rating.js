@@ -17,7 +17,7 @@ function Rating() {
       setTimeout(() => {
         setRatingSubmitted(false);
         // Simulate navigation back to the home page
-        window.location.href = '/home'; // Replace with the actual URL of your home page
+      //  window.location.href = '/home'; // Replace with the actual URL of your home page
       }, 3000); // Display "Rated Successfully" message for 3 seconds
     } else {
       alert('Please enter your rating.');

@@ -1,6 +1,7 @@
 // Signup.js
 import React, { useState } from "react";
 import axios from "axios";
+import { API } from "../App";
 
 const Signup = () => {
   const [userData, setUserData] = useState({
@@ -19,7 +20,7 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://web-technologies-delta.vercel.app/signup", userData);
+      const response = await API.post("/signup", userData);
       console.log("Signup successful:", response.data);
     } catch (error) {
       console.error("Signup failed:", error.message);

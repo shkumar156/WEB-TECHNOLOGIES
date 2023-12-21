@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './shoes.css';
+import { API } from '../App';
 
 function ShoesMenu() {
   const [shoes, setShoes] = useState([]);
@@ -10,7 +11,7 @@ function ShoesMenu() {
     const fetchData = async () => {
       try {
     
-        axios.get("https://web-technologies-delta.vercel.app/api/product/getProduct").then((res) => {
+        API.get("/api/product/getProduct").then((res) => {
           const data=res.data.product;
           const shoesData = data.filter((product) => product.category === 'Shoes');
         

@@ -6,7 +6,7 @@ const UserLoginDetails = ({ userData }) => {
     <div className="UserDetailsContainer">
       <div className="UserDetailRow">
         <div className="UserDetailLabel">User id</div>:
-        <div className="UserDetailValue">{userData?._id}</div>
+        <div className="UserDetailValue">{userData._id?userData._id:userData?.sub}</div>
       </div>
       <div className="UserDetailRow">
         <div className="UserDetailLabel">User email</div>:
@@ -14,7 +14,7 @@ const UserLoginDetails = ({ userData }) => {
       </div>
       <div className="UserDetailRow">
         <div className="UserDetailLabel">User gender</div>:
-        <div className="UserDetailValue">{userData?.gender}</div>
+        <div className="UserDetailValue">{userData.gender?userData.gender:"Male"}</div>
       </div>
     </div>
   );

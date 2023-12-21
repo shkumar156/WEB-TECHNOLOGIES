@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './dress.css';
+import { API } from '../App';
 
 function DressMenu() {
   const [dresses, setDresses] = useState([]);
@@ -10,7 +11,7 @@ function DressMenu() {
     // Fetch data from the API
     const fetchData = async () => {
       try {
-        axios.get("https://web-technologies-delta.vercel.app/api/product/getProduct").then((res) => {
+        API.get("/api/product/getProduct").then((res) => {
           const data = res.data.product;
           const dressesData = data.filter((product) => product.category === 'Women Dress');
         
