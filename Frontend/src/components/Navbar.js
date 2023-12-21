@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 function Navbar({ setUser, setAdminUser, user, admin }) {
   const handleLogout = () => {
+    localStorage.clear();
     setAdminUser(false);
     setUser(false);
   };
