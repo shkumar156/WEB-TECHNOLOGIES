@@ -42,7 +42,7 @@
 
 .col-md-9 {
     border: 2px solid black;
-    height: 560px;
+    height: 100vh;
     background-color: blueviolet;
 }
 
